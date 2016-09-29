@@ -1,7 +1,7 @@
 # restful
 Basic RESTful web services with Node.js and Express.js
 Features :
-0. Get: A list of json items or  just one
+-Get: A list of json items or  just one
 -Post
 -Mongo wire up
 -Search for items
