@@ -5,4 +5,4 @@ Features :
 -Post
 -Mongo wire up
 -Search for items
-nd `class` or `id` attributes. See the [sanitization filter](https://github.com/jch/html-
+
