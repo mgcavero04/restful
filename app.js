@@ -1,6 +1,7 @@
 var express=require('express');
     mongoose=require('mongoose');
 var db=mongoose.connect('mongodb://localhost:27017/bookAPI');
+    bodyParser=require('body-parser');
 var Book=require('./models/bookModel');
 var assert = require('assert');
 var app=express();
@@ -8,7 +9,8 @@ var port = process.env.PORT || 3000;
 
 var birds = require('./birds');
 app.use('/birds', birds);
-
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 
 
 var bookRouter=express.Router();
@@ -17,7 +19,14 @@ app.get('/', function(req, res) {
     
 });
 app.use('/api', bookRouter);
-bookRouter.route('/Books').get(function(req,res){
+bookRouter.route('/Books')
+.post(function(req, res)
+{
+    var book= new Book(req.body);
+    book.save();
+    res.status(201).send(book)
+})
+.get(function(req,res){
     var query={};
     if(req.query.genre)
     {
