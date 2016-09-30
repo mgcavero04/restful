@@ -23,6 +23,6 @@
 - gulp
 
 ## Application url: 
-- http://localhost:8080
+- http://localhost:8080/api/books
 
 
