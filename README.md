@@ -15,7 +15,6 @@
 git clone https://github.com/mgcavero04/restful/
 cd  restful
 
-
 # Install dependencies
 npm install
 
@@ -23,6 +22,6 @@ npm install
 mongod
 gulp
 
-# Applciation url: http://localhost:8080
+# Application url: http://localhost:8080
 
 
