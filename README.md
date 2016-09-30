@@ -5,6 +5,10 @@
 - Post : Add a new item to the list
 - Mongo wire up
 - Search for items
+- Put : Replace an existing item
+- Patch: Update  part of an item
+- Remove : An item
+- Middleware
 - Tested  with Postman
 
 
