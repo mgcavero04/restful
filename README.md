@@ -1,4 +1,4 @@
-# restful
+# RESTful
 ## Basic RESTful API with Node and Express
 ###### Features :
 - Get: A list of json items or  just one
@@ -10,5 +10,19 @@
 - Remove : An item
 - Middleware
 - Tested  with Postman
+
+# Install
+git clone https://github.com/mgcavero04/restful/
+cd  restful
+
+
+# Install dependencies
+npm install
+
+# run and watch for changes in .ts files
+mongod
+gulp
+
+# Applciation url: http://localhost:8080
 
 
