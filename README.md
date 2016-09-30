@@ -11,17 +11,18 @@
 - Middleware
 - Tested  with Postman
 
-# Install
-git clone https://github.com/mgcavero04/restful/
-cd  restful
+## Install
+- git clone https://github.com/mgcavero04/restful/
+- cd  restful
 
-# Install dependencies
-npm install
+## Install dependencies
+- npm install
 
-# run and watch for changes in .ts files
-mongod
-gulp
+## run and watch for changes in .ts files
+- mongod
+- gulp
 
-# Application url: http://localhost:8080
+## Application url: 
+- http://localhost:8080
 
 
